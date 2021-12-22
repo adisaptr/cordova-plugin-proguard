@@ -83,7 +83,6 @@
 -dontwarn net.sqlcipher.**
 
 -keep class org.codehaus.** { *; }
--keep class com.idemia.** { *; }
 -keepattributes *Annotation*,EnclosingMethod
 
 -keepclassmembers enum * {
@@ -110,3 +109,27 @@
 # These clases contain references to cordova webView
 -keep class com.ionicframework.cordova.webview.** {*; }
 -keep class com.ionicframework.cordova.webview.*
+
+# These for idemia sdk
+-dontwarn java.beans.** 
+-dontwarn javax.annotation.** 
+-dontwarn javax.naming.** 
+-dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement 
+-dontwarn org.slf4j.** 
+-dontwarn org.w3c.dom.bootstrap.** 
+  
+-keep class okhttp3.** { *; } 
+-keep class com.fasterxml.jackson.** { *; } 
+-keep class org.bouncycastle.** { *; } 
+  
+-dontwarn ch.** 
+-dontwarn org.apache.** 
+  
+-keep class ffffff.** { *; } 
+-keep class gggggg.** { *; } 
+-keep class hhhhhh.** { *; } 
+-keep class rkkkkk.** { *; } 
+  
+-dontwarn rkkkkk.** 
+  
+-keep class com.idemia.wa.api.customer.** { *; }
