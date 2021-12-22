@@ -83,6 +83,7 @@
 -dontwarn net.sqlcipher.**
 
 -keep class org.codehaus.** { *; }
+-keep class com.idemia.** { *; }
 -keepattributes *Annotation*,EnclosingMethod
 
 -keepclassmembers enum * {
